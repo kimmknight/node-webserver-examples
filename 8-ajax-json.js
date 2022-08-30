@@ -161,3 +161,20 @@ app.get("/customers", checkLoginDetails, function (req, res) {
 
 // Start the web server on TCP port 3000
 app.listen(3000);
+
+
+
+// To test this, browse to:
+// http://127.0.0.1:3000/overview
+//
+// You should be immediately redirected to the login page.
+// Login using credentials from the "users" array.
+// You should see the /overview page which looks similar to the
+// last activity. This one displays session data as well as some
+// customer data. All of this data actually fetched from the server
+// using JavaScript code in the HTML page. This occurs (slightly)
+// after the page is loaded in the browser.
+//
+// You should still be able to manually browse to /private as well.
+//
+// Logout and try access /overview again. It should redirect you to login.

@@ -136,3 +136,15 @@ app.get("/", function (req, res) {
 
 // Start the web server on TCP port 3000
 app.listen(3000);
+
+
+
+// To test this, browse to:
+// http://127.0.0.1:3000/private
+//
+// You should be immediately redirected to the login page.
+// Login using credentials from the "users" array.
+// You should see the /private page which looks much nicer than the
+// last activity. This is because it is a full static HTML page + image.
+//
+// Logout and try access /private again. It should redirect you to login.
