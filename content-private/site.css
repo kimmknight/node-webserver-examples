@@ -1,0 +1,14 @@
+.large-image {
+    width: 50%;
+    height: auto;
+}
+
+.responsive-image {
+    width: 90%;
+    height: auto;
+}
+
+.small-image {
+    height: 10em;
+    width: auto;
+}

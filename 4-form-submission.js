@@ -2,16 +2,20 @@
 var express = require("express");
 
 
+
 // Create an "instance" of Express called "app". We will use "app" to configure and run the web server
 var app = express();
+
 
 
 // Activate the "express.urlencoded" feature which allows us to read basic form data submitted by clients.
 app.use(express.urlencoded());
 
 
+
 // We will route "/form" through to the static HTML file "content/form.html"
 app.use("/form", express.static('content/form.html'))
+
 
 
 // Setup a "route" to handle all POST requests for "/newaccount" from the client
@@ -27,8 +31,10 @@ app.post("/newaccount", function(req, res){
 });
 
 
+
 // Start the web server on TCP port 3000
 app.listen(3000);
+
 
 
 // To test this, browse to:

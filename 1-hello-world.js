@@ -2,8 +2,10 @@
 var express = require("express");
 
 
+
 // Create an "instance" of Express called "app". We will use "app" to configure and run the web server
 var app = express();
+
 
 
 // Setup a "route" to handle all GET requests for "/" from the client
@@ -12,13 +14,16 @@ var app = express();
 app.get("/", function(req, res){
 
 
+
     // Send a response to the client that says "Hello world!"
    res.send("<h1>Hello world!</h1>");
 });
 
 
+
 // Start the web server on TCP port 3000
 app.listen(3000);
+
 
 
 // To test this, browse to:

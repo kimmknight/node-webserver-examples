@@ -2,8 +2,10 @@
 var express = require("express");
 
 
+
 // Create an "instance" of Express called "app". We will use "app" to configure and run the web server
 var app = express();
+
 
 
 // Pass requests for "/" through to a folder called "content".
@@ -12,9 +14,11 @@ var app = express();
 app.use("/", express.static('content'))
 
 
+
 // We can also pass requests through to a specific file, rather than a whole folder.
 // This is much better in terms of security.
 app.use("/special", express.static('content/special.jpg'))
+
 
 
 // Express can handle requests for static files as dynamic requests.
@@ -24,8 +28,10 @@ app.get("/hello", function(req, res){
 });
 
 
+
 // Start the web server on TCP port 3000
 app.listen(3000);
+
 
 
 // To test this, browse to:
