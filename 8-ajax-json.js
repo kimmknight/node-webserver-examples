@@ -11,13 +11,6 @@ app.use(express.urlencoded());
 
 
 
-// Import the cookie-parser library which is used to handle cookies
-var cookieParser = require("cookie-parser");
-// Tell the web server (app) to use cookie-parser
-app.use(cookieParser());
-
-
-
 // Import the express-session library which will use cookies to keep track of client sessions
 var session = require("express-session");
 // Tell the web server (app) to use express-session to track sessions
