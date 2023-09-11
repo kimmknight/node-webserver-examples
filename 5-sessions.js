@@ -68,6 +68,7 @@ app.get('/', function (req, res) {
     }
 });
 
+// Setup a route that will destroy the user's session
 app.get("/destroy", function(req, res) {
     req.session.destroy();
     res.send("Your session has been destroyed. <a href='/'>Go back</a>")
